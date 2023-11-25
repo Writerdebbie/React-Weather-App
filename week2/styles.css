@@ -1,0 +1,55 @@
+h1 {
+        text-align: center;
+        color: #2D93DC;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+      h2{
+        font-size: 120px;
+        padding:0 auto;
+        color: #2D93DC;
+      }
+      h3{
+        color: #fff;
+        font-size: small;
+        margin-left: 5px;
+        background-color: #2D93DC;
+        text-align: center;
+      }
+      .card {
+        max-width: 70%;
+        text-align: left;
+        margin: 0 auto;
+      }
+      .fog {
+        font-size: 80px;
+        color: orange;
+        padding-right: 0px;
+        padding-left: 5px;
+      }
+       .rain {
+        font-size: 60px;
+        color: #F7B703;
+        padding-right: 0px;
+        padding-left: 5px;
+      }
+      .col{
+         padding-right: 0px;
+        padding-left: 0px;
+        margin-bottom: 15px;
+        
+      }
+      .info{
+        list-style-type: none;
+        padding-left: 0;
+        font-weight: bold;
+        line-height: 20px;
+      }
+      div[class^="col-2"] {
+    background-color: rgba(10, 216, 103, 0.2);
+    outline: 1px solid rgba(0, 0, 0, 0.5);
+    padding-left: 0px;
+      }
+      br{
+        text-align: right;
+        font-weight: bolder;
+      }

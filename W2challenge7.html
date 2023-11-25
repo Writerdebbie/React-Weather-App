@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: red;
+            font-family: 'Times New Roman', Times, serif;
+  
+        }
+        h2{
+            text-align: center;
+            color: rgb(188, 144, 230);
+
+        }
+        h3{
+            text-align: center;
+
+        }
+        h5{
+            text-align: center;
+            color: red;
+        }
+        button{
+            color: white;
+            background-color: blueviolet;
+            padding: 15px 20px;
+            display: block;
+            margin: 0 auto;
+            border-radius: 30px;
+            border: 1px dotted blueviolet;
+            opacity: 1;
+            font-size: larger;
+            transition: all 200ms ease;
+        }
+        button:hover{
+            color: blueviolet;
+            background-color: white;
+            cursor: crosshair;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>SheCodes is a coding Workshop for <em>Women</em></h1>
+    <h2>Access a new career in Technology</h2>
+    <h3>sheCodes teaches coding skill to busy Women</h3>
+    <button>Apply Today</button>
+    <h5>For a limited time only</h5>
+<script>
+    function applicantPrompt (){
+        let name = prompt ("What is your name?");
+        let age= prompt ("How old are you?");
+      let h1 = document.querySelector("h1")
+
+    if (age >=18) {
+        h1.innerHTML = "Hi" + " " + name + "! Welcome to Shecodes" 
+    }   else{
+        h1.innerHTML= "Sorry" + " " + name + "! You cannot apply to SheCodes <br /> You can try again some other time. <br /> Thank you for your time."
+    
+    }
+
+    }
+
+    let applyButton = document.querySelector("button");
+    applyButton.addEventListener("mouseenter", applicantPrompt);
+
+</script>
+</body>
+</html>

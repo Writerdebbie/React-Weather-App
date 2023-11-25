@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #d6620a;
+        margin: 15px;
+      }
+      h2 {
+        border: 1px solid rgb(5, 230, 21);
+        border-radius: 5px;
+        line-height: 50px;
+        padding: 2px;
+        font-size: 30px;
+        text-align: center;
+        color: rgb(5, 230, 31);
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+        border-color: rgb(5, 230, 21);
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background-color: #d6620a;
+        color: rgb(233, 225, 243);
+        font-size: 20px;
+        font-family: Arial;
+        font-weight: bold;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+        transition: all 200ms ease;
+      }
+      button:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      .pagewrap {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        background: linear-gradient(#f6eecd, rgba(245, 173, 38, 0.829));
+      }
+      .footnote {
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        opacity: 0.7;
+        background: linear-gradient(white, grey);
+      }
+      a {
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      span {
+        font-size: larger;
+      }
+      .learn-more{
+        color:black ;
+      }
+      .learn-more:hover{
+        color:blue ;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="pagewrap">
+      <h1>I LOVE PIZZA</h1>
+      <h2>Especially Italian Pizzas</h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/098/361/original/Italian_Pizza.jpg.jpeg?1695850853"
+        alt="Italian Pizza"
+      />
+      <hr />
+      <p>
+        <strong>INGREDIENTS</strong>
+        1 individual store-bought pizza crust 1 plum tomato seeded and roughly
+        chopped 1 clove garlic chopped 2 tbsp (30 mL) fresh basil roughly
+        chopped Salt Pepper 1/4 cup (60 mL) Canadian Provolone grated 1 1/2 oz
+        (45 g) fresh Canadian Mozzarella sliced 2 tbsp (30 mL) shaves of
+        Canadian Parmesan
+      </p>
+
+      <a
+        href="https://dairyfarmersofcanada.ca/en/canadian-goodness/recipes/italian-pizza"
+        target="_blank"
+        class="learn-more"
+        >To learn more about the Italian Pizza Recipe,
+        <span>please <strong>CLICK</strong></span>
+      </a>
+      <p>
+        <button class="buy-button">Place Order Now</button>
+      </p>
+
+      <p class="footnote">
+        This page was proudly built by
+        <a href="m.facebook.com" target="_blank"> Kolawole Festus </a>
+      </p>
+    </div>
+    <script>
+      alert("Hello World! You want some yummy pizza🍕? Then, let's rock!😊");
+      function order() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let emoji = prompt("Can I have your favorite emoji?");
+
+        if (name.length) {
+          alert(
+            "Thank you" +
+              " " +
+              name +
+              "!😊 We'll be in touch by email shortly. Meanwhile, you can't cut down on Italian pizza, never!" +
+              emoji
+          );
+        } else {
+          alert(
+            "Sorry! No pizza for you😔. Kindly fill the prompt to get a bite😋"
+          );
+        }
+      }
+
+      let buyButton = document.querySelector(".buy-button");
+      buyButton.addEventListener("click", order);
+    </script>
+  </body>
+</html>

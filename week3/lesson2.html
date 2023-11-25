@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      When the page loads, ask for the applicant first name using a prompt.
+      <br />Alert 'Welcome, [First name]'
+      <p>
+        Bonus: If user does not enter her first name, Alert 'Too bad for you’
+      </p>
+    </h1>
+    <script>
+      let firstName = prompt("What is your name?");
+
+      if (firstName.length > 0) {
+        alert("Welcome" + " " + firstName + "👋");
+      } else {
+        alert("Too bad for you😒, NO NAME?😲");
+      }
+
+      let country = "Guinea Bissau";
+      country = country.replace(" ", "_");
+      console.log(country);
+      let city = " Sydney   ";
+      city = city.trim();
+      console.log(city);
+      let attraction = "Opera House";
+      attraction = attraction.toLowerCase();
+      console.log(attraction);
+      let place = "School";
+      place = place.toUpperCase();
+      console.log(place);
+      let sentence = `I went to visit the ${attraction} in ${city}, right next to my ${place}. Now, I'm getting ready for my trip to ${country}`;
+      console.log(sentence);
+
+      let price = 4.5;
+      console.log(Math.round(4.5));
+      price = Math.round(price);
+      console.log(price);
+      price = Math.floor(price);
+      console.log(price);
+      console.log(Math.min(4, 1, 3, 10));
+      console.log(Math.max(4, 1, 3, 10));
+
+      let weather = {
+  paris: {
+    temp: 19.7,
+    humidity: 80
+  },
+  tokyo: {
+    temp: 17.3,
+    humidity: 50
+  },
+  lisbon: {
+    temp: 30.2,
+    humidity: 20
+  },
+  "san francisco": {
+    temp: 20.9,
+    humidity: 100
+  },
+  oslo: {
+    temp: -5,
+    humidity: 20
+  }
+};
+    </script>
+  </body>
+</html>
